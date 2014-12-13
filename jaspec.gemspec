@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Jaspec::VERSION
   spec.authors       = ["Kevin Gisi"]
   spec.email         = ["kevin@kevingisi.com"]
-  spec.summary       = %q{A stupid simple Jasmine spec-runner for requirejs modules}
+  spec.summary       = %q{A stupid simple Jasmine spec-runner for AMD modules}
   spec.homepage      = ""
   spec.license       = "MIT"
 

@@ -14,7 +14,7 @@ module Jaspec
     end
 
     def run
-      Jaspec::Runner.run File.expand_path(@argv[1])
+      Jaspec::Runner.run File.expand_path(@argv[0])
     end
   end
 end

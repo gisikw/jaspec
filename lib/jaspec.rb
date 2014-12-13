@@ -1,5 +1,9 @@
-require "jaspec/version"
+jaspec_files = [
+  'version',
+  'runner',
+  'cli'
+]
 
-module Jaspec
-  # Your code goes here...
+jaspec_files.each do |file|
+  require File.join('jaspec', file)
 end

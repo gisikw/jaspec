@@ -1,4 +1,4 @@
-# Jaspec
+# Jaspec [![Build Status](https://travis-ci.org/gisikw/jaspec.svg?branch=master)](https://travis-ci.org/gisikw/jaspec) [![Gem Version](https://badge.fury.io/rb/jaspec.png)](http://badge.fury.io/rb/jaspec)
 
 Jaspec is a dirt-simple Jasmine spec runner. It runs off of [Jasmine](http://jasmine.github.io/) standalone, [RequireJS](http://requirejs.org/), and [PhantomJS](http://phantomjs.org/). It doesn't care about sprockets; it doesn't start a web server; it does something really really simple:
 

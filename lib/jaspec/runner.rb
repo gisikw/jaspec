@@ -29,7 +29,7 @@ module Jaspec
           return true
         else
           puts "\n#{failures.length} failing spec file#{'s' if failures.length > 1}:"
-          puts failures.join("\n")
+          puts failures.map{|f|"\033[31m- #{f}\033[0m"}.join("\n")
           return false
         end
       end

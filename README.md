@@ -34,6 +34,20 @@ Finally, if you want to run across an entire directory:
 
 This will execute against all \*Spec.js, and \*Spec.coffee files within that directory.
 
+## Add Jaspec to your Rakefile
+
+Jaspec is unopinionated as to where you keep your specs. To add a Rake task, put the following in your Rakefile:
+
+```rake
+require 'jaspec/tasks'
+
+Jaspec::Tasks.new('spec/javascripts') # select your own spec directory to taste.
+```
+
+Now, you can run the following to invoke Jaspec on your specs:
+
+    $ rake spec:jaspec
+
 ## Writing Your Specs
 
 You can format your specs normally:

@@ -6,17 +6,21 @@ module Jaspec
     class << self
 
       def run(spec)
-        if File.directory?(spec)
+        if spec.kind_of?(Array) || File.directory?(spec)
           run_all(spec)
         else
           system("phantomjs #{PHANTOM_RUNNER} #{HTML_RUNNER} #{spec}")
         end
       end
 
-      def run_all(dir)
+      def run_all(specs)
         failures = []
 
-        Dir.glob(File.join(dir,'**','*Spec.{js,coffee}')).each do |spec|
+        unless specs.kind_of?(Array)
+          specs = Dir.glob(File.join(specs,'**','*Spec.{js,coffee}'))
+        end
+
+        specs.each do |spec|
           failures << spec if !run(spec)
         end
 

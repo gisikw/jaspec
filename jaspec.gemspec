@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Kevin Gisi"]
   spec.email         = ["kevin@kevingisi.com"]
   spec.summary       = %q{A stupid simple Jasmine spec-runner for AMD modules}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/gisikw/jaspec"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
